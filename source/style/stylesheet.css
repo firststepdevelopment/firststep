@@ -1,0 +1,221 @@
+/* GENERAL */
+  body {
+    font-family: "Lato", sans-serif;
+    font-size: large;
+    color: black;
+  }
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  p {
+    font-size: smaller;
+  }
+  .body-text {
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal;
+    padding: 50px;
+    /* margin-top: 50px;
+    margin-bottom: 40px; */
+  }
+  /* @font-face {
+      font-family: customFont;
+      src: url();
+  } */
+  .title {
+    text-align: center;
+    font-size: 34px;
+    padding: 50px;
+  }
+  .cover-img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-style: normal;
+  }
+/* END GENERAL */
+
+/* NAVMENU */
+  .topnav {
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-align: center;
+    padding: 10px 10px;
+    font-style: normal;
+    text-decoration: none;
+
+    position: fixed;
+    top: 0px;
+    width: 100%;
+  }
+
+  .topnav img {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    padding: 0px 0px;
+    margin-right: auto;
+    float: left;
+  }
+
+  .topnav a.icon {
+    text-align: left;
+    float: left;
+    font-size: 18px;
+    font-style: normal;
+    position: relative;
+    padding: px 16px;
+  }
+
+  .topnav a {
+    text-align: left;
+    text-decoration: none;
+    float: right;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: black;
+  }
+
+  .topnav a:hover {
+    font-style: italic;
+  }
+
+  .topnav a.active {
+    font-weight: bold;
+  }
+  .topnav a.active:hover {
+    font-style: normal;
+  }
+/* END NAVMENU */
+
+/* TOGGLE */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 5px;
+    height: 14px;
+  }
+
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: black;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px black;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 10px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/* END TOGGLE */
+
+/* BUTTON */
+  /* General */
+  .point {
+    cursor: pointer;
+  }
+
+  /* Game Button */
+  .button {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 3px grey;
+  }
+  .button:hover {
+    background-color: gainsboro;
+    color: black;
+  }
+  .button:active {
+    background-color: black;
+    color: white;
+    box-shadow: 0 1px grey;
+    transform: translateY(2px);
+  }
+  .solitaire {
+    background-color: green;
+    cursor: pointer;
+  }
+  .b {
+    background-color: blueviolet;
+  }
+
+  /* Icon Button */
+  .gh {
+    color: black;
+  }
+  a.gh:link {
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 24px;
+      
+  }
+
+  /* Bottom Button */
+  .bottom-button {
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+      cursor: pointer;
+  }
+/* END BUTTON */
